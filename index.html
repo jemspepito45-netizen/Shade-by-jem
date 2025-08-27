@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shade by Jem | Style by Bryan</title>
+  <meta name="description" content="Shade by Jem - Style by Bryan. Premium barbering and salon services with luxury vibes. Book your appointment today.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <img src="logo.png" alt="Shade by Jem Logo">
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Stylists</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#booking" class="btn btn-primary">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1>Shade by Jem</h1>
+        <p class="tagline">Style by Bryan — Premium Barbering & Salon</p>
+        <a href="#booking" class="btn btn-primary">Book an Appointment</a>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Our Services</h2>
+          <p>From sharp cuts to luxury treatments, we’ve got you covered.</p>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <h3>Haircut & Style</h3>
+            <p class="price">₱400</p>
+            <p>Classic, fade, or custom style with finish.</p>
+          </article>
+          <article class="card">
+            <h3>Beard Trim</h3>
+            <p class="price">₱300</p>
+            <p>Line-up, trim, and grooming with precision.</p>
+          </article>
+          <article class="card">
+            <h3>Hair Coloring</h3>
+            <p class="price">From ₱1,200</p>
+            <p>Premium shades and blends, ammonia-free.</p>
+          </article>
+          <article class="card">
+            <h3>Treatments</h3>
+            <p class="price">₱600+</p>
+            <p>Keratin, scalp care, and hair repair.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Gallery</h2>
+        </header>
+        <div class="gallery-grid">
+          <img src="https://placehold.co/600x400" alt="Work sample">
+          <img src="https://placehold.co/600x400" alt="Work sample">
+          <img src="https://placehold.co/600x400" alt="Work sample">
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Meet Bryan</h2>
+          <p>Founder & Master Stylist of Shade by Jem</p>
+        </header>
+        <div class="team-grid">
+          <article class="person">
+            <img src="https://placehold.co/300x300" alt="Bryan">
+            <h3>Bryan</h3>
+            <p>Specialist in barbering, color, and modern salon styles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>What Clients Say</h2>
+        </header>
+        <div class="reviews">
+          <blockquote>“Best cut and style I’ve had. The gold standard in Cebu.”</blockquote>
+          <blockquote>“Luxury vibe, professional service, and sharp results.”</blockquote>
+          <blockquote>“Bryan really knows how to bring out your best look.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Book an Appointment</h2>
+        </header>
+        <form id="bookingForm" class="booking">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <select name="service" required>
+            <option value="">Choose Service</option>
+            <option>Haircut & Style</option>
+            <option>Beard Trim</option>
+            <option>Hair Coloring</option>
+            <option>Treatment</option>
+          </select>
+          <input type="date" name="date" required>
+          <input type="time" name="time" required>
+          <textarea name="notes" placeholder="Special requests"></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p id="formSuccess" class="form-success" hidden>Thanks! We’ll confirm your booking shortly.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Contact & Visit</h2>
+        </header>
+        <p>123 Luxury St, Cebu City, Philippines</p>
+        <p>Phone: <a href="tel:+639001234567">+63 900 123 4567</a></p>
+        <p>Instagram: <a href="#">@shadebyjem</a></p>
+        <div class="map-embed">
+          <iframe src="https://maps.google.com/maps?q=cebu%20city&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shade by Jem | Style by Bryan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
